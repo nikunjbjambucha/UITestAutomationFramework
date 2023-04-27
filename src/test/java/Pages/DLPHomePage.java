@@ -44,4 +44,18 @@ public class DLPHomePage extends basepage{
 		MordernUploadMethods.click();	
 		test.log(LogStatus.PASS, "MordernUploadMethods", "MordernUploadMethods clicked");
 	}
+	
+	
+	/*----------------------Dummy path for check download locations-------------------------*/
+	
+	@FindBy(how = How.XPATH, using = ".//table[@class='dltable']/tbody/tr[16]/td/a") 
+	private WebElement ExtreaSmalFile;
+	
+	public void DownloadFile() throws InterruptedException {	
+		Assert.assertTrue(ExtreaSmalFile.isDisplayed());
+		ExtreaSmalFile.click();	
+		Thread.sleep(5000);
+		test.log(LogStatus.PASS, "Click on download", "clicked on download");
+	}
+	
 }
