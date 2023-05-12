@@ -113,7 +113,7 @@ public class Testsuite1 extends baseclass{
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void test3() 
 	{
 		try
@@ -137,6 +137,55 @@ public class Testsuite1 extends baseclass{
 		
 	}
 	
+	@Test(enabled=false)
+	public void test4()
+
+	{
+		try
+		{
+			test = extent.startTest("Test case 4");
+			OpenBrowser(BrowserType.Chrome);
+			String filename = "TestData";
+			ReadExcel.ReadExcelData(filename);
+			GotoUrl("https://web2.anasource.com/workspace/");
+			currentpage.GetInstance(DLPHomePage.class).GetLogin();
+			System.out.println("Test Completed successfully");
+			test.log(LogStatus.PASS, "Test case 4", "Pass");
+		}
+		catch(Exception ex)
+		{
+			ex.toString();
+			System.out.println("Test case got failed as: "+ex);
+			test.log(LogStatus.FAIL, "Test case got fail ", ex);
+		}
+	}
+	
+	@Test
+	public void test5()
+
+	{
+		try
+		{
+			test = extent.startTest("Test case 5");
+			OpenBrowser(BrowserType.Chrome);
+			String filename = "TestDataCSV";
+			TestDataRowTitle testdata = ReadCSV.TestData(filename);
+			
+			System.out.println("Username is : "+testdata.Username);
+			System.out.println("Password is : "+testdata.Password);
+			System.out.println("Firstname is : "+testdata.Firstname);
+			GotoUrl("https://web2.anasource.com/workspace/");
+			currentpage.GetInstance(DLPHomePage.class).GetLogin(testdata);
+			System.out.println("Test Completed successfully");
+			test.log(LogStatus.PASS, "Test case 5", "Pass");
+		}
+		catch(Exception ex)
+		{
+			ex.toString();
+			System.out.println("Test case got failed as: "+ex);
+			test.log(LogStatus.FAIL, "Test case got fail ", ex);
+		}
+	}
 	
 	@AfterMethod
 	public void TeardownTest() {	

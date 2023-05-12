@@ -15,6 +15,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Base.baseclass;
 import Base.basepage;
+import DataProvider.ReadExcel;
+import DataProvider.TestDataRowTitle;
 
 public class DLPHomePage extends basepage{
 	
@@ -57,5 +59,36 @@ public class DLPHomePage extends basepage{
 		Thread.sleep(5000);
 		test.log(LogStatus.PASS, "Click on download", "clicked on download");
 	}
+	
+	/*-----------------------Check Data from excel file----------------------------------------*/
+	@FindBy(how = How.ID, using = "txtUserName")
+	private WebElement Username;
+
+	@FindBy(how = How.ID, using = "txtPassword")
+	private WebElement Password;
+
+	@FindBy(how = How.ID, using = "btnSave")
+	private WebElement Submit;
+
+	public void GetLogin() throws InterruptedException
+	{
+		String UserName = ReadExcel.getData(0,1,0);
+		String PassWord = ReadExcel.getData(0,1,1);
+		Username.sendKeys(UserName);
+		Password.sendKeys(PassWord);
+		Submit.click();
+		Thread.sleep(10000);
+	}
+	
+	public void GetLogin(TestDataRowTitle testdata ) throws InterruptedException
+	{
+		Username.sendKeys(testdata.Username);
+		Password.sendKeys(testdata.Password);
+		Submit.click();
+		Thread.sleep(10000);
+	}
+	
+	
+	
 	
 }

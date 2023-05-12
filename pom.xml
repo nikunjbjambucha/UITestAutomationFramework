@@ -64,6 +64,13 @@
     	<version>8.0.33</version>
 	</dependency>
 	  
+	<!-- https://commons.apache.org/proper/commons-csv/download_csv.cgi -->
+	<dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-csv</artifactId>
+    	<version>1.5</version>
+	</dependency>
+
   </dependencies>
 
   <build>
