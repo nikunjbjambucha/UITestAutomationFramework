@@ -78,9 +78,8 @@ public class ReadCSV {
 			for (CSVRecord csvRecord : csvParser) 
 			{
 				// Accessing values by the names assigned to each column
-				Testdatarow.Username = getvalue(csvRecord, "Uasername");
+				Testdatarow.Username = getvalue(csvRecord, "Username");
 				Testdatarow.Password = getvalue(csvRecord, "Password");
-				Testdatarow.Firstname = getvalue(csvRecord, "Firstname");
 			}
 			
 		} 

@@ -5,10 +5,11 @@
     <classes>
       <class name="Testcase.Testsuite1">
         <methods>
-          <include name="test1"/>
           <include name="TestInitialize"/>
           <include name="ClassCleanup"/>
           <include name="TeardownTest"/>
+          <include name="test6"/>
+          <include name="beforetest"/>
         </methods>
       </class> <!-- Testcase.Testsuite1 -->
     </classes>

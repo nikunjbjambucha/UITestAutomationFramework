@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-12T15:49:07 IST" name="Default suite" finished-at="2023-05-12T15:49:38 IST" duration-ms="31327">
+  <suite started-at="2023-08-26T10:11:14 IST" name="Suite" finished-at="2023-08-26T10:11:53 IST" duration-ms="39006">
     <groups>
     </groups>
-    <test started-at="2023-05-12T15:49:07 IST" name="Default test" finished-at="2023-05-12T15:49:38 IST" duration-ms="31327">
+    <test started-at="2023-08-26T10:11:14 IST" name="Test" finished-at="2023-08-26T10:11:53 IST" duration-ms="39006">
       <class name="Testcase.Testsuite1">
-        <test-method is-config="true" signature="TestInitialize()[pri:0, instance:Testcase.Testsuite1@515c6049]" started-at="2023-05-12T15:49:07 IST" name="TestInitialize" finished-at="2023-05-12T15:49:07 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="TestInitialize()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:14 IST" name="TestInitialize" finished-at="2023-08-26T10:11:14 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestInitialize -->
-        <test-method signature="test5()[pri:0, instance:Testcase.Testsuite1@515c6049]" started-at="2023-05-12T15:49:07 IST" name="test5" finished-at="2023-05-12T15:49:37 IST" duration-ms="29903" status="PASS">
+        <test-method signature="Login_locked_user()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:14 IST" name="Login_locked_user" finished-at="2023-08-26T10:11:32 IST" duration-ms="18229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5 -->
-        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:Testcase.Testsuite1@515c6049]" started-at="2023-05-12T15:49:37 IST" name="TeardownTest" finished-at="2023-05-12T15:49:38 IST" duration-ms="848" status="PASS">
+        </test-method> <!-- Login_locked_user -->
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:32 IST" name="TeardownTest" finished-at="2023-08-26T10:11:33 IST" duration-ms="715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
-        <test-method is-config="true" signature="ClassCleanup()[pri:0, instance:Testcase.Testsuite1@515c6049]" started-at="2023-05-12T15:49:38 IST" name="ClassCleanup" finished-at="2023-05-12T15:49:38 IST" duration-ms="283" status="PASS">
+        <test-method signature="Login_standard_user()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:33 IST" name="Login_standard_user" finished-at="2023-08-26T10:11:51 IST" duration-ms="18262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_standard_user -->
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:51 IST" name="TeardownTest" finished-at="2023-08-26T10:11:52 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+        <test-method is-config="true" signature="ClassCleanup()[pri:0, instance:Testcase.Testsuite1@3590fc5b]" started-at="2023-08-26T10:11:52 IST" name="ClassCleanup" finished-at="2023-08-26T10:11:53 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClassCleanup -->
       </class> <!-- Testcase.Testsuite1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

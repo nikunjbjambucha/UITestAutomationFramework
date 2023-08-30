@@ -32,5 +32,13 @@ public class DateHelpers {
 		
 		return Date;
 	}
+	
+	public static String TodayDatenew() {
+		
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("dMMuuuu");
+		String Date = today.format(format);
+		
+		return Date;
+	}
 
 }
